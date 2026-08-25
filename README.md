@@ -1,5 +1,5 @@
 # hp-reversal
-An implementation of the Hannenhalli-Pevzner (HP) algorithm for finding the minimum reversal distance and a minimum reversal scenario between two unichromosomal genomes. The implementation constructs the required breakpoint, cycle, overlap, and hurdle structures to compute the reversal distance and identify a sequence of reversals that transforms one genome into the other. 
+An implementation of the Hannenhalli-Pevzner (HP) algorithm for finding the minimum reversal distance/reversal scenario between two unichromosomal genomes. The implementation constructs the required breakpoint, cycle, overlap, and hurdle structures to compute the reversal distance and identify a sequence of reversals that transforms one genome into the other. 
 
 To-do: extend for multichromosomal genomes
 
