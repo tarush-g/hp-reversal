@@ -1,5 +1,5 @@
 # hp-reversal
-An implementation of the Hannenhalli-Pevzner (HP) algorithm for finding the minimum reversal distance/reversal scenario between two unichromosomal genomes. The implementation constructs the required breakpoint, cycle, overlap, and hurdle structures to compute the reversal distance and identify a sequence of reversals that transforms one genome into the other. 
+An implementation of the Hannenhalli-Pevzner algorithm to compute the reversal distance and identify a sequence of reversals that transforms one unichromosomal genome into the other. 
 
 To-do: extend for multichromosomal genomes
 
@@ -10,7 +10,7 @@ python main.py 4,-3,1,-2,5
 python main.py "2 -3 1" "3 1 -2"
 ```
 
-The first genome is required, and the second is optional and defaults to the identity permutation (1, 2, ..., n). Genes are signed integers, comma- or space-separated, with optional surrounding brackets. Output includes the reversal distance and an optimal step-by-step scenario. `accuracy.py` checks the algorithm against breadth-first search in the reversal graph for every signed permutation up to 6 genes/50,362 cases.
+The first genome is required, and the second is optional and defaults to the identity permutation (1, 2, ..., n). Genes are signed integers, comma- or space-separated, with optional surrounding brackets. Output includes reversal distance and an optimal step-by-step scenario. `accuracy.py` checks the algorithm against BFS in the reversal graph for every signed permutation up to 6 genes (50,362 cases).
 
 # References
 [A very elementary presentation of the Hannenhalli–Pevzner theory](https://www.sciencedirect.com/science/article/pii/S0166218X04003440)
